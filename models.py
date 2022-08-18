@@ -12,7 +12,7 @@ class Publisher(Base):
     publisher_name = sq.Column(sq.String(length=80), unique=True, nullable=False)
 
     def __str__(self):
-        return f'Издатель {self.id_publisher}: {self.publisher_name}: '
+        return f'Издатель {self.id_publisher} - {self.publisher_name}: '
 
 
 class Book(Base):
